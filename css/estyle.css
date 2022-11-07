@@ -1,0 +1,197 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	background: rgba(215, 211, 211, 0.3);
+	font-family: 'Poppins', sans-serif;
+}
+.contenedor{
+	width: 95%;
+	max-width: 1800px;
+	margin: 0 auto;
+
+	display: grid;
+	// grid-gap: 10px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(7, auto);
+
+	grid-template-areas: "header  header"
+						 "slider slider"
+						 "titulo titulo" 
+						 "adopta1 adopta2"
+						 "doctor doctor"	
+						 "sponsor sponsor"
+						 "footer footer";	
+}
+
+/*-------------------------------------------*/
+/*				Botones      				 */
+/*-------------------------------------------*/
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 9px;
+}
+
+.button1 {
+  background-color: white; 
+  color: #494949; 
+  border: 0;
+}
+
+.button1:hover {
+  background-color: #D7f171;
+  color: white;
+}
+
+/*-------------------------------------------*/
+/*				HEADER 						 */
+/*-------------------------------------------*/
+
+.contenedor .cabeceraPrincipal{
+	grid-area: header;
+	background-color: #B5EF8A;
+	display: flex;
+	justify-content: space-between; ;
+}
+
+.contenedor .cabeceraPrincipal .logotipo {
+	padding: 10px 40px;
+}
+
+/*-------------------------------------------*/
+/*				Menu Principal				 */
+/*-------------------------------------------*/
+
+.contenedor .cabeceraPrincipal nav {
+	display: flex;
+	align-items: center;
+}
+
+.contenedor .cabeceraPrincipal nav a {
+	text-decoration: none;
+	padding: 0 20px;
+}
+
+.contenedor .cabeceraPrincipal nav a:hover {
+	background-color:  #65524D;
+	color: #fff;
+  transition-duration: 0.4s;
+
+}
+
+/*-------------------------------------------*/
+/*				Slider princiapl			 */
+/*-------------------------------------------*/
+
+.contenedor .sliderPrincipal{
+	grid-area: slider;
+	background-color: #333;
+}
+
+.contenedor .sliderPrincipal img{
+	width: 100%;
+}
+
+/*-------------------------------------------*/
+/*				Slider princiapl			 */
+/*-------------------------------------------*/
+
+.contenedor .titulo {
+	grid-area: titulo;
+	text-align: center;
+}
+
+.contenedor .titulo h3 {
+	font-size: 32px
+	padding. 20px 0;
+}
+
+.contenedor .adopcion1{
+	grid-area: adopta1;
+	display: flex;
+}
+
+.contenedor .adopcion2{
+	grid-area: adopta2;
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor .adopcion1 h3, .contenedor .adopcion2 h3 {
+	padding: 20px;
+	font-size: 25px
+}
+
+.contenedor .adopcion1 p, .contenedor .adopcion2 p {
+	padding: 10px 20px;
+	font-size: 15px
+}
+.contenedor .doctor{
+	grid-area: doctor;
+	background-color: #333;
+}
+.contenedor .sponsor{
+	grid-area: sponsor;
+	background-color: #333;
+}
+
+/*-------------------------------------------*/
+/*				Pie de pagina				 */
+/*-------------------------------------------*/
+
+.contenedor .piePagina{
+	grid-area: footer;
+	background-color: #1b1b1b;
+	display: flex;
+	justify-content: space-between;
+}
+.contenedor .piePagina .derechos {
+	padding: 2em;
+	text-align: center;
+}
+.contenedor .piePagina .derechos h6{
+	color: #a3a3a3;
+}
+.contenedor .piePagina .redesSociales{
+	color: #a3a3a3;
+	font-size: 25px;
+}
+.contenedor .piePagina .redesSociales a{
+	color: #a3a3a3;
+	padding: 0 10px;
+	text-decoration: none;
+}
+/*-------------------------------------------*/
+/*				Personalizados				 */
+/*-------------------------------------------*/
+.derecha {
+	text-align: right;
+	padding: 10px
+}
+.mayusculas {
+	text-transform: uppercase;
+}
+
+.colorAzul {
+	color: #817e9f;
+}
+
+.colorRojo {
+	color: red;
+}
+
+.espacio {
+	padding: 2em 0;
+}
