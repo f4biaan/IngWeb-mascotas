@@ -7,9 +7,9 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="icon" href="images/logo.png" sizes="32x32" />
-    <link rel="icon" href="images/logo.png" sizes="192x192" />
-    <link rel="apple-touch-icon" href="images/logo.png" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+	<link rel="icon" href="images/logo.png" sizes="192x192" />
+	<link rel="apple-touch-icon" href="images/logo.png" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
 <body>
 	<div class="contenedor">
