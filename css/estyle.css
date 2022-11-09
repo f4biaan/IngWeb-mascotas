@@ -1,69 +1,78 @@
-*{
+* {
 	padding: 0;
 	margin: 0;
 }
-body{
+
+body {
 	background: rgba(215, 211, 211, 0.3);
 	font-family: 'Poppins', sans-serif;
 }
-.contenedor{
+
+.contenedor {
 	width: 95%;
 	max-width: 1800px;
 	margin: 0 auto;
 
 	display: grid;
-	// grid-gap: 10px;
+	grid-gap: 10px;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(7, auto);
 
 	grid-template-areas: "header  header"
-						 "slider slider"
-						 "titulo titulo" 
-						 "adopta1 adopta2"
-						 "doctor doctor"	
-						 "sponsor sponsor"
-						 "footer footer";	
+		"slider slider"
+		"titulo titulo"
+		"adopta1 adopta2"
+		"doctor doctor"
+		"sponsor sponsor"
+		"footer footer";
 }
 
 /*-------------------------------------------*/
 /*				Botones      				 */
 /*-------------------------------------------*/
 .button {
-  background-color: #4CAF50; /* Green */
-  border: none;
-  color: white;
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  font-family: 'Poppins', sans-serif;
-  border-radius: 9px;
+	background-color: #4CAF40;
+	/* Green */
+	border: none;
+	color: white;
+	padding: 16px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	transition-duration: 0.4s;
+	cursor: pointer;
+	font-family: 'Poppins', sans-serif;
+	border-radius: 9px;
+}
+
+.button:hover {
+	background-color: #3c8f3c;
+	color: white;
 }
 
 .button1 {
-  background-color: white; 
-  color: #494949; 
-  border: 0;
+	background-color: white;
+	color: #494949;
+	border: 0;
 }
 
 .button1:hover {
-  background-color: #D7f171;
-  color: white;
+	background-color: #D7f171;
+	color: white;
 }
 
 /*-------------------------------------------*/
 /*				HEADER 						 */
 /*-------------------------------------------*/
 
-.contenedor .cabeceraPrincipal{
+.contenedor .cabeceraPrincipal {
 	grid-area: header;
 	background-color: #B5EF8A;
 	display: flex;
-	justify-content: space-between; ;
+	justify-content: space-between;
+	;
 }
 
 .contenedor .cabeceraPrincipal .logotipo {
@@ -85,9 +94,9 @@ body{
 }
 
 .contenedor .cabeceraPrincipal nav a:hover {
-	background-color:  #65524D;
+	background-color: #65524D;
 	color: #fff;
-  transition-duration: 0.4s;
+	transition-duration: 0.4s;
 
 }
 
@@ -95,14 +104,62 @@ body{
 /*				Slider princiapl			 */
 /*-------------------------------------------*/
 
-.contenedor .sliderPrincipal{
+.contenedor .sliderPrincipal {
 	grid-area: slider;
 	background-color: #333;
 }
 
-.contenedor .sliderPrincipal img{
+.contenedor .sliderPrincipal img {
 	width: 100%;
 }
+
+
+/* Main */
+main {
+	grid-area: slider;
+	margin: 0 auto;
+	width: 90%;
+	padding: 2em 0;
+}
+
+main h2 {
+	color: #817e9f;
+	font-size: 2em;
+}
+
+main p {
+	color: #605858;
+	font-size: 1em;
+	line-height: 28px;
+}
+
+/*-------------------------------------------*/
+/*				Formularios					 */
+/*-------------------------------------------*/
+
+main .grupoinput {
+	padding: .5em 0;
+}
+
+main .grupoinput label {
+	display: block;
+	font-size: 1em;
+}
+
+/* especificar a que tipos de input afectar */
+main .grupoinput input[type="text"],
+main .grupoinput input[type="email"],
+main .grupoinput input[type="number"],
+main .grupoinput input[type="date"] {
+	width: 90%;
+	padding: 15px 20px;
+	border-radius: 1px solid #ccc;
+}
+
+
+
+
+
 
 /*-------------------------------------------*/
 /*				Slider princiapl			 */
@@ -114,38 +171,42 @@ body{
 }
 
 .contenedor .titulo h3 {
-	font-size: 32px
-	padding. 20px 0;
+	font-size: 32px padding. 20px 0;
 }
 
-.contenedor .adopcion1{
+.contenedor .adopcion1 {
 	grid-area: adopta1;
 	display: flex;
 }
 
-.contenedor .adopcion2{
+.contenedor .adopcion2 {
 	grid-area: adopta2;
 	display: flex;
 	justify-content: space-between;
 }
 
-.contenedor .adopcion1 h3, .contenedor .adopcion2 h3 {
+.contenedor .adopcion1 h3,
+.contenedor .adopcion2 h3 {
 	padding: 20px;
 	font-size: 25px
 }
 
-.contenedor .adopcion1 p, .contenedor .adopcion2 p {
+.contenedor .adopcion1 p,
+.contenedor .adopcion2 p {
 	padding: 10px 20px;
 	font-size: 15px
 }
-.contenedor .doctor{
+
+.contenedor .doctor {
 	grid-area: doctor;
 	background-color: #333;
 }
-.contenedor .sponsor{
+
+.contenedor .sponsor {
 	grid-area: sponsor;
 	background-color: #333;
 }
+
 .contenedor .sliderPrincipal .info {
 	position: absolute;
 }
@@ -154,39 +215,44 @@ body{
 /*				Pie de pagina				 */
 /*-------------------------------------------*/
 
-.contenedor .piePagina{
+.contenedor .piePagina {
 	grid-area: footer;
 	background-color: #1b1b1b;
 	display: flex;
 	justify-content: space-between;
 }
+
 .contenedor .piePagina .derechos {
 	padding: 2em;
 	text-align: center;
 }
-.contenedor .piePagina .derechos h6{
+
+.contenedor .piePagina .derechos h6 {
 	color: #a3a3a3;
 }
-.contenedor .piePagina .redesSociales{
+
+.contenedor .piePagina .redesSociales {
 	color: #a3a3a3;
 	font-size: 25px;
 }
-.contenedor .piePagina .redesSociales a{
+
+.contenedor .piePagina .redesSociales a {
 	color: #a3a3a3;
 	padding: 0 10px;
 	text-decoration: none;
 }
+
 /*-------------------------------------------*/
 /*				doctor						 */
 /*-------------------------------------------*/
-.contenedor .doctor {
+.contenedor .doctor .doctor-cont {
 	display: flex;
 	justify-content: space-between;
 }
 
-.contenedor .doctor .doctor-cont div {
+/* .contenedor .doctor .doctor-cont div {
 	width: 263px;
-}
+} */
 
 /*-------------------------------------------*/
 /*				Sponsor						 */
@@ -209,6 +275,7 @@ body{
 	text-align: right;
 	padding: 10px
 }
+
 .mayusculas {
 	text-transform: uppercase;
 }
