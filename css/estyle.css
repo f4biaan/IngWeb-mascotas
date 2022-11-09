@@ -146,6 +146,9 @@ body{
 	grid-area: sponsor;
 	background-color: #333;
 }
+.contenedor .sliderPrincipal .info {
+	position: absolute;
+}
 
 /*-------------------------------------------*/
 /*				Pie de pagina				 */
@@ -173,6 +176,32 @@ body{
 	padding: 0 10px;
 	text-decoration: none;
 }
+/*-------------------------------------------*/
+/*				doctor						 */
+/*-------------------------------------------*/
+.contenedor .doctor {
+	display: flex;
+	justify-content: space-between;
+}
+
+.contenedor .doctor .doctor-cont div {
+	width: 263px;
+}
+
+/*-------------------------------------------*/
+/*				Sponsor						 */
+/*-------------------------------------------*/
+
+
+.sponsor-cnt {
+	display: flex;
+	justify-content: space-between;
+}
+
+.sponsor-cnt img {
+	height: 500px;
+}
+
 /*-------------------------------------------*/
 /*				Personalizados				 */
 /*-------------------------------------------*/
