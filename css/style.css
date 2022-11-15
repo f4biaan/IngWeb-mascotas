@@ -109,6 +109,31 @@ body {
 	/* background-color: #333; */
 }
 
+.contenedor .sliderPrincipal .slide-p {
+	position: relative;
+}
+
+.contenedor .sliderPrincipal .info {
+	position: absolute;
+	background: rgba(186, 223, 249, 0.63);
+	border-radius: 10px;
+	border-color: #fff;
+	border-width: 1px;
+	border-style: solid;
+	text-align: center;
+	width: 80%;
+	padding: 20px;
+	bottom: 2rem;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.contenedor .sliderPrincipal .info h2 {
+	color: #fff;
+	font-size: 2rem;
+}
+
 .contenedor .sliderPrincipal img {
 	width: 100%;
 }
@@ -165,6 +190,10 @@ main .grupoinput input[type="date"] {
 /*				Slider princiapl			 */
 /*-------------------------------------------*/
 
+
+
+
+
 .contenedor .titulo {
 	grid-area: titulo;
 	text-align: center;
@@ -208,9 +237,7 @@ main .grupoinput input[type="date"] {
 	background-color: #333;
 }
 
-.contenedor .sliderPrincipal .info {
-	position: absolute;
-}
+
 
 /*-------------------------------------------*/
 /*				Pie de pagina				 */
@@ -282,33 +309,6 @@ main .grupoinput input[type="date"] {
 	height: 400.88px;
 }
 
-/* 
-
-
-.contenedor .doctor .doctores {
-	display: flex;
-	justify-content: space-between;
-	margin: 15px;
-}
-
-.contenedor .doctor .doctores .doc-card {
-	width: 229px;
-	height: 324px;
-	display: grid;
-	grid-template-rows: minmax(50px, 1fr);
-	grid-template-areas: "stack";
-	overflow: hidden;
-}
-
-.contenedor .doctor .doctores .doc-card img{
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-} */
-
-/* .contenedor .doctor .doctor-cont div {
-	width: 263px;
-} */
 
 /*-------------------------------------------*/
 /*				Sponsor						 */

@@ -27,13 +27,16 @@
 		</header>
 
 		<section class="sliderPrincipal">
-			<img src="images/slider1.jpg">
-			<div class="info">
-				<h2>Proyecto de adopción de mascotas</h2>
-				<div class="boton-adop">
-					<button class="button button1">ADOPTANOS</button>
+			<div class="slide-p">
+				<img src="images/slider1.jpg" class="slide-p-1">
+				<div class="info">
+					<h2>Proyecto de adopción de mascotas</h2>
+					<div class="boton-adop">
+						<button class="button button1">ADOPTANOS</button>
+					</div>
 				</div>
 			</div>
+
 		</section>
 
 		<section class="titulo">
