@@ -197,10 +197,6 @@ main .grupoinput input[type="date"] {
 	font-size: 15px
 }
 
-.contenedor .doctor {
-	grid-area: doctor;
-	background-color: #333;
-}
 
 .contenedor .sponsor {
 	grid-area: sponsor;
@@ -245,10 +241,65 @@ main .grupoinput input[type="date"] {
 /*-------------------------------------------*/
 /*				doctor						 */
 /*-------------------------------------------*/
-.contenedor .doctor .doctor-cont {
+
+.contenedor .doctor {
+	grid-area: doctor;
+	/* background-color: #ccc; */
+	text-align: left;
 	display: flex;
 	justify-content: space-between;
 }
+
+.contenedor .doctor .doc {
+	position: relative;
+}
+
+.contenedor .doctor .doc .text-doc {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	background: rgba(186, 223, 249, 0.63);
+}
+
+.contenedor .doctor .doc .text-doc p {
+	color: #817e9f;
+	font-size: 18px;
+}
+
+.contenedor .doctor .doc .text-doc h3 {
+	color: #817e9f;
+	font-size: 30px;
+}
+
+.contenedor .doctor .doc img {
+	width: 320px;
+	height: 400.88px;
+}
+
+/* 
+
+
+.contenedor .doctor .doctores {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px;
+}
+
+.contenedor .doctor .doctores .doc-card {
+	width: 229px;
+	height: 324px;
+	display: grid;
+	grid-template-rows: minmax(50px, 1fr);
+	grid-template-areas: "stack";
+	overflow: hidden;
+}
+
+.contenedor .doctor .doctores .doc-card img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+} */
 
 /* .contenedor .doctor .doctor-cont div {
 	width: 263px;

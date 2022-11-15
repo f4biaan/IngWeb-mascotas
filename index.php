@@ -63,7 +63,68 @@
 		</section>
 
 		<section class="doctor">
-			<div class="doctor-cont">
+			<article class="doc">
+				<div class="text-doc">
+					<h3 class="doc-name">Dr. Luis Jaramillo</h3>
+					<p class="esp-doc">Especialista en alimentación canina</p>
+				</div>
+				<img src="images/doctor1.png" alt="">
+			</article>
+			<article class="doc">
+				<div class="text-doc">
+					<h3 class="doc-name">Dr. Luis Jaramillo</h3>
+					<p class="esp-doc">Especialista en alimentación canina</p>
+				</div>
+				<img src="images/doctor2.png" alt="">
+			</article>
+			<article class="doc">
+				<div class="text-doc">
+					<h3 class="doc-name">Dr. Luis Jaramillo</h3>
+					<p class="esp-doc">Especialista en alimentación canina</p>
+				</div>
+				<img src="images/doctor3.png" alt="">
+			</article>
+			<article class="doc">
+				<div class="text-doc">
+					<h3 class="doc-name">Dr. Luis Jaramillo</h3>
+					<p class="esp-doc">Especialista en alimentación canina</p>
+				</div>
+				<img src="images/doctor4.png" alt="">
+			</article>
+			<!-- <div class="doctores">
+				<figure class="doc-card">
+					<img src="images/doctor1.png" alt="">
+					<figcaption>
+						<h3>Dr. Luis Jaramillo</h3>
+						<p>Especialista</p>
+					</figcaption>
+				</figure>
+
+				<figure class="doc-card">
+					<img src="images/doctor2.png" alt="">
+					<figcaption>
+						<h3>Dr. Luis Jaramillo</h3>
+						<p>Especialista</p>
+					</figcaption>
+				</figure>
+
+				<figure class="doc-card">
+					<img src="images/doctor3.png" alt="">
+					<figcaption>
+						<h3>Dr. Luis Jaramillo</h3>
+						<p>Especialista</p>
+					</figcaption>
+				</figure>
+
+				<figure class="doc-card">
+					<img src="images/doctor4.png" alt="">
+					<figcaption>
+						<h3>Dr. Luis Jaramillo</h3>
+						<p>Especialista</p>
+					</figcaption>
+				</figure>
+			</div> -->
+			<!-- <div class="doctor-cont">
 				<div class="doc">
 					<img src="images/doctor1.png" alt="">
 				</div>
@@ -76,7 +137,7 @@
 				<div class="doc">
 					<img src="images/doctor1.png" alt="">
 				</div>
-			</div>
+			</div> -->
 		</section>
 
 		<section class="sponsor">
