@@ -106,7 +106,7 @@ body {
 
 .contenedor .sliderPrincipal {
 	grid-area: slider;
-	background-color: #333;
+	/* background-color: #333; */
 }
 
 .contenedor .sliderPrincipal img {
@@ -189,6 +189,11 @@ main .grupoinput input[type="date"] {
 .contenedor .adopcion2 h3 {
 	padding: 20px;
 	font-size: 25px
+}
+
+.contenedor .img-pet {
+	width: 190px;
+	height: 298px;
 }
 
 .contenedor .adopcion1 p,

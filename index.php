@@ -37,11 +37,11 @@
 		</section>
 
 		<section class="titulo">
-			<h2 class="colorAzul espacio mayusculas">Adopción</h2>
+			<h2 class="colorAzul espacio mayusculas">En Adopción</h2>
 		</section>
 
 		<section class="adopcion1">
-			<img src="images/slider2.jpg" title="Casimiro" description="perro en adopcion">
+			<img src="images/slider2.jpg" title="Casimiro" description="perro en adopcion" class="img-pet">
 			<section class="card1">
 				<h3 class="mayusculas colorAzul">Casimiro</h3>
 				<p class="derecha">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet mi nisi, vitae maximus neque laoreet sit amet. Vestibulum sed lacus eu justo convallis ultricies ut et sapien. Sed sed risus non arcu lobortis lacinia quis in elit. Duis cursus nunc a enim iaculis cursus. Nulla sed sem at turpis.</p>
@@ -52,7 +52,7 @@
 		</section>
 
 		<section class="adopcion2">
-			<img src="images/slider3.jpg" title="garto en adopcion" description="gatp en adopcion">
+			<img src="images/slider3.jpg" title="garto en adopcion" description="gatp en adopcion" class="img-pet">
 			<article class="card1">
 				<h3 class="mayusculas colorAzul">Thomas</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam laoreet mi nisi, vitae maximus neque laoreet sit amet. Vestibulum sed lacus eu justo zonvallis ultricies ut et sapien. Sed sed risus non arcu lobortis lacinia quis in elit. Duis cursus nunc a enim iaculis cursus. Nulla sed sem at turpis.</p>
