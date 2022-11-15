@@ -145,7 +145,7 @@
 
 		<section class="sponsor">
 			<div class="sponsor-cnt">
-				<img src="images/logo.png">
+				<img src="images/logotipoPet.png">
 				<img src="images/logo-utpl.png">
 			</div>
 		</section>
