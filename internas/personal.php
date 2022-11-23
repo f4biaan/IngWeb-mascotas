@@ -9,7 +9,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 	<link rel="icon" href="../images/logo.png" sizes="32x32" />
 	<link rel="icon" href="../images/logo.png" sizes="192x192" />
-	<link rel="apple-touch-icon" href="images/logo.png" />
+	<link rel="apple-touch-icon" href="../images/logo.png" />
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
 </head>
 
@@ -19,16 +19,25 @@
 			<section class="logotipo"><img src="../images/logotipoPet.png"></section>
 			<nav class="menuPrincipal">
 				<a href="../index.php">Inicio</a>
-				<a href="#">Servicios</a>
+				<a href="servicios.php">Servicios</a>
 				<a href="productos.php">Productos</a>
-				<a href="adopcion.php">Adopción</a>
+				<a href="#">Adopción</a>
 				<a href="personal.php">Personal</a>
 			</nav>
 		</header>
 
 		<main>
-			<h2>Servicos de municipio de Loja</h2>
-			<p>Snares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat tradeSnares are silent killers laid by poachers across wild places to trap and kill animals for the illegal bushmeat trade</p>
+			<h2>Listado de personal</h2>
+			<?php
+			include("../dll/conexion.php");
+			include("../dll/class_mysqli.php");
+			$miconexion=new class_mysqli();
+			$miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
+			$miconexion->consulta("select * from personal");
+			$miconexion->verconsulta();
+		
+			?>
+			
 		</main>
 
 		<section class="sponsor">

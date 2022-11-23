@@ -22,7 +22,7 @@
 				<a href="#">Servicios</a>
 				<a href="productos.php">Productos</a>
 				<a href="adopcion.php">Adopción</a>
-				<a href="contactos.php">Contactos</a>
+				<a href="personal.php">Personal</a>
 			</nav>
 		</header>
 
