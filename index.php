@@ -22,7 +22,7 @@
 				<a href="internas/servicios.php">Servicios</a>
 				<a href="internas/productos.php">Productos</a>
 				<a href="internas/adopcion.php">Adopción</a>
-				<a href="internas/personañ.php">Personal</a>
+				<a href="internas/personal.php">Personal</a>
 			</nav>
 		</header>
 
@@ -94,53 +94,6 @@
 				</div>
 				<img src="images/doctor4.png" alt="">
 			</article>
-			<!-- <div class="doctores">
-				<figure class="doc-card">
-					<img src="images/doctor1.png" alt="">
-					<figcaption>
-						<h3>Dr. Luis Jaramillo</h3>
-						<p>Especialista</p>
-					</figcaption>
-				</figure>
-
-				<figure class="doc-card">
-					<img src="images/doctor2.png" alt="">
-					<figcaption>
-						<h3>Dr. Luis Jaramillo</h3>
-						<p>Especialista</p>
-					</figcaption>
-				</figure>
-
-				<figure class="doc-card">
-					<img src="images/doctor3.png" alt="">
-					<figcaption>
-						<h3>Dr. Luis Jaramillo</h3>
-						<p>Especialista</p>
-					</figcaption>
-				</figure>
-
-				<figure class="doc-card">
-					<img src="images/doctor4.png" alt="">
-					<figcaption>
-						<h3>Dr. Luis Jaramillo</h3>
-						<p>Especialista</p>
-					</figcaption>
-				</figure>
-			</div> -->
-			<!-- <div class="doctor-cont">
-				<div class="doc">
-					<img src="images/doctor1.png" alt="">
-				</div>
-				<div class="doc">
-					<img src="images/doctor1.png" alt="">
-				</div>
-				<div class="doc">
-					<img src="images/doctor1.png" alt="">
-				</div>
-				<div class="doc">
-					<img src="images/doctor1.png" alt="">
-				</div>
-			</div> -->
 		</section>
 
 		<section class="sponsor">

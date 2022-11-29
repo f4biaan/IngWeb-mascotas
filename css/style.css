@@ -354,3 +354,7 @@ main .grupoinput input[type="date"] {
 .espacio {
 	padding: 2em 0;
 }
+
+.a-boton {
+	text-decoration: none;
+}

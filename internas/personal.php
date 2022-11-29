@@ -21,20 +21,20 @@
 				<a href="../index.php">Inicio</a>
 				<a href="servicios.php">Servicios</a>
 				<a href="productos.php">Productos</a>
-				<a href="#">Adopción</a>
-				<a href="personal.php">Personal</a>
+				<a href="adopcion.php">Adopción</a>
+				<a href="#">Personal</a>
 			</nav>
 		</header>
 
 		<main>
 			<h2>Listado de personal</h2>
 			<?php
-			include("../dll/conexion.php");
+			include("../dll/config.php");
 			include("../dll/class_mysqli.php");
 			$miconexion=new class_mysqli();
 			$miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
 			$miconexion->consulta("select * from personal");
-			$miconexion->verconsulta();
+			$miconexion->verconsultaCRUD();
 		
 			?>
 			
