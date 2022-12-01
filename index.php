@@ -23,6 +23,8 @@
 				<a href="internas/productos.php">Productos</a>
 				<a href="internas/adopcion.php">Adopción</a>
 				<a href="internas/personal.php">Personal</a>
+				<a href="internas/postulaciones.php">Postulaciones</a>
+				<a href="internas/lista-postulaciones.php">Lista Postulaciones</a>
 			</nav>
 		</header>
 

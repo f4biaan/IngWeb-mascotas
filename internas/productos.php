@@ -23,6 +23,8 @@
 				<a href="#">Productos</a>
 				<a href="adopcion.php">Adopción</a>
 				<a href="personal.php">Personal</a>
+				<a href="postulaciones.php">Postulaciones</a>
+				<a href="lista-postulaciones.php">Lista Postulaciones</a>
 			</nav>
 		</header>
 

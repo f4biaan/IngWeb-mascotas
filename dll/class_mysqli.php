@@ -59,6 +59,53 @@ class class_mysqli
         return $this->Conexion_ID;
     }
 
+    // check if exist cedula en db and return true or false
+    function checkCedula($cedula)
+    {
+        $sql = "select * from personal where cedula='$cedula'";
+        $resSQL = $this->consulta($sql);
+        if ($resSQL->num_rows > 0) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+    // return all rows from sql query
+    function fetchAll()
+    {
+        $rows = array();
+        while ($row = mysqli_fetch_array($this->Consulta_ID)) {
+            $rows[] = $row;
+        }
+        return $rows;
+    }
+
+    // return array with rows data from db
+    function fetch_array($Consulta_ID = 0)
+    {
+        if ($Consulta_ID == 0) $Consulta_ID = $this->Consulta_ID;
+        $array = mysqli_fetch_array($Consulta_ID);
+        return $array;
+    }
+
+
+    /* function fetch_array($consulta_id = -1)
+    {
+        if ($consulta_id != -1) {
+            $this->Consulta_ID = $consulta_id;
+        }
+        if ($row = mysqli_fetch_array($this->Consulta_ID)) {
+            return $row;
+        } else {
+            return 0;
+        }
+    } */
+
+    function getRows() {
+        return mysqli_fetch_array($this->Consulta_ID);
+    }
+
     /* retorna numero de campos (columnas) */
     function numcampos()
     {
@@ -72,7 +119,7 @@ class class_mysqli
 
     function verconsulta()
     {
-        echo "<table border=1>";
+        echo "<table border=1 style ='border-collapse:collapse;'>";
         echo "<tr>";
         /* for para recorrer la columnas */
         for ($i = 0; $i < $this->numcampos(); $i++) {

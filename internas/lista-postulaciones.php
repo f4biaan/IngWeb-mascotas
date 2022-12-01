@@ -22,35 +22,29 @@
 				<a href="servicios.php">Servicios</a>
 				<a href="productos.php">Productos</a>
 				<a href="adopcion.php">Adopción</a>
-				<a href="#">Personal</a>
+				<a href="personal.php">Personal</a>
 				<a href="postulaciones.php">Postulaciones</a>
-				<a href="lista-postulaciones.php">Lista Postulaciones</a>
+				<a href="#">Lista Postulaciones</a>
 			</nav>
 		</header>
 
 		<main>
-			<h2>Actualizar personal</h2>
+			<h2>Listado de personal</h2>
 			<?php
 			include("../dll/config.php");
 			include("../dll/class_mysqli.php");
-			$miconexion = new class_mysqli();
+			$miconexion=new class_mysqli();
 			$miconexion->conectar(DBHOST, DBUSER, DBPASS, DBNAME);
-			$idUser = $_GET['id'];
-			// $sql = "select * from personal where id=$idUser";
-			// $miconexion->consulta($sql);
-			$miconexion->updateUser($idUser);
-
-			// $nombres = $_POST['nombres'];
-			// $apellidos = $_POST['apellidos'];
-			// $cedula = $_POST['cedula'];
-			// $direccion = $_POST['direccion'];
-			// $telefono = $_POST['telefono'];
-			// $fechaNacimiento = $_POST['fechaNacimiento'];
-			// $correo = $_POST['correo'];
+			$miconexion->consulta(
+				"select p.nombres NOMBRES, p.apellidos APELLIDOS, p.cedula CEDULA, m.nombre MASCOTA, m.raza RAZA, m.postulaciones POSTULACIONES
+				from postulante p
+					inner join postulacion po on p.cedula = po.id_personal
+					inner join mascota m on po.id_mascota = m.id"
+			);
+			$miconexion->verconsulta();
+		
 			?>
-
-			<form action=""></form>
-
+			
 		</main>
 
 		<section class="sponsor">
